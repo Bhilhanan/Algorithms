@@ -1,0 +1,54 @@
+i=1;
+while(!(tempValue=inputTrack.pop()))
+	tempArray.[i][0]=tempValue
+
+j=tempArray.length
+while(i>=1)
+	inpoutTrack.push(tempArray[j][0])
+	j--
+
+Sort tempArray
+
+//for(i=1;i<=tempArray.length;i++)
+//	tempArray[i][1]=i
+
+flag=0
+canChangePeekTrack=false
+currentTrack=0
+while(!(inputTrack.peek()=null && side.peek()=null))
+	
+	if(canChangePeekTrack=true)
+		if(flag=0)
+			currVal=inputTrack.peek()
+			currentTrack=0
+			canChangePeekTrack=false
+		else
+			currVal=side.peek()
+			currentTrack=1
+			canChangePeekTrack=false
+	else
+		if(currentTrack=0){
+			currVal=inputTrack.peek()
+			if currVal=tempArray[i]
+				exit.push(inputTrack.pop())
+				i++
+				canChangePeekTrack=true
+			else
+				side.push(inputTrack.pop())
+				if currVal=tempArray[i+1]
+					flag=1
+			
+		}
+		else{
+			currVal=side.peek()
+			if currVal=tempArray[i]
+				exit.push(side.pop())
+				i++
+				canChangePeekTrack=true
+			else
+				inputTrack.push(side.pop())
+				if currVal=tempArray[i+1]
+					flag=0
+		}
+		
+	
